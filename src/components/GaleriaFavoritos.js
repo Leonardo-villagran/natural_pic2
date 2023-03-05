@@ -26,8 +26,6 @@ export default function Home() {
 
     }
 
-
-
     return (
         <div>
             <Container fluid="md" >

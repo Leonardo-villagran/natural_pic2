@@ -12,7 +12,6 @@ export default function Home() {
 
   const { nuevaMatriz, setNuevaMatriz } = useContext(Context);
 
-
   const presionarboton = (id, cantidad) => {
     console.log('Button clicked', id, cantidad);
     const nuevosDatos = nuevaMatriz.map((dato) =>

@@ -28,7 +28,7 @@ export default function Home() {
 
     return (
         <div>
-            <Container fluid="md" >
+            <Container fluid >
                 <Row >
                     {imprimirFavoritos()}
                 </Row>

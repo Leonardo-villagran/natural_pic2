@@ -21,21 +21,28 @@ export default function Home() {
     console.log('Button clicked', id, cantidad);
   }
 
+  const imprimir = () => {
+    const arreglo=
+      nuevaMatriz.map((producto) => (
+        <Col key={producto.id}>
+          <div className='caja'>
+            <img className='imagen' onClick={() => presionarboton(producto.id, producto.cantidad)} src={producto.tiny} alt="foto" />
+            <div className='heart px-2'><img onClick={() => presionarboton(producto.id, producto.cantidad)} 
+            src={producto.cantidad === 0 ? blanco: rojo} alt="foto"/>{ producto.cantidad}</div>
+            <div className='texto_blanco px-2'>{producto.alt}</div>
+          </div>
+        </Col>
+      ));
+    return arreglo;
+  }
+
+
+
   return (
     <div>
-      <Container fluid="md" >
+      <Container fluid>
         <Row >
-          {nuevaMatriz.map((producto) => (
-            <Col key={producto.id}>
-              <div className='caja'>
-                <img className='imagen' onClick={() => presionarboton(producto.id, producto.cantidad)} src={producto.tiny} alt="foto" />
-                <div className='heart px-2'><img onClick={() => presionarboton(producto.id, producto.cantidad)} 
-                src={producto.cantidad === 0 ? blanco: rojo} alt="foto"/>{ producto.cantidad}</div>
-                <div className='texto_blanco px-2'>{producto.alt}</div>
-              </div>
-
-            </Col>
-          ))}
+          {imprimir()}
         </Row>
       </Container>
     </div>

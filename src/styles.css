@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background-image: url("./assets/img/fondo.png");
+  background-size: cover;
+}
+
+.App {
+  font-family: "Maitree", serif;
+  text-align: center;
+  color: #43a047;
+  
+}
+
+h1 {
+  margin-bottom: 0;
+}

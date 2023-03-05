@@ -6,7 +6,7 @@ Nota:
 
 En caso de instalar con npm el sistema se carga en la ruta: 
 
-http://localhost:3000/natural_pic2
+http://localhost:3000
 
 No en la raíz. Esto se realizó para facilitar el deploy dentro de Github Pages.
 

@@ -13,12 +13,12 @@ export default function Home() {
   const { nuevaMatriz, setNuevaMatriz } = useContext(Context);
 
   const presionarboton = (id, cantidad) => {
-    console.log('Button clicked', id, cantidad);
+    
     const nuevosDatos = nuevaMatriz.map((dato) =>
       dato.id === id ? { ...dato, cantidad: cantidad + 1 } : dato
     );
     setNuevaMatriz(nuevosDatos);
-
+    console.log('Button clicked', id, cantidad);
   }
 
   return (
